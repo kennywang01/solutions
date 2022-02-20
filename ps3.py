@@ -1,5 +1,7 @@
 from scipy.stats import binom
 
+# binom.pmf(k, n, p) computes P(X=k) using the binomial PMF with params n and p
+
 def type1(n, k):
     p = 0
     for i in range(k, n + 1): # n is included in this interval
