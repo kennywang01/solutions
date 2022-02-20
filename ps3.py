@@ -20,7 +20,7 @@ def params(n):
         beta = type2(n, k)
         if (alpha < 0.05 and beta < 0.05):
             return [n, k]
-    return params(n + 1)
+    return params(n + 1) # if n fails, then recurse with n+1
 
 print(params(0))
         
